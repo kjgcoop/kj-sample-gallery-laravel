@@ -18,6 +18,8 @@
 @endforeach
 </ul>
 
-<img src="kj_images/lg/{{ $default }}" id="full">
+<div id="full">
+    <img src="kj_images/lg/{{ $default }}">
+</div>
 
 </body>

@@ -1,15 +1,13 @@
 <html>
 <head>
     <title>@yield('title')</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/kj-gallery.js"></script>
     <link rel="stylesheet" type="text/css" href="css/kj-gallery.css">
 </head>
 
 <body>
-    <p>Hard-coded paragraph</p>
-
     @yield('content');
-
-
 </body>
 </html>
 

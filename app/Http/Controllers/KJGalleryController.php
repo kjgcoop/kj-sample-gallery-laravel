@@ -14,8 +14,7 @@ class KJGalleryController extends Controller
 
         return view('home', array(
             'imgs'    => $imgs,
-            'default' => '1.jpg',
-            'title'   => "KJ's Sample Gallery"
+            'default' => '1.jpg'
         ));
     }
 }

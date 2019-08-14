@@ -52,7 +52,7 @@ class CreateKjImageTable extends Migration
         array(
             'id'       => '7',
             'filename' => '7.jpg'
-        ),
+        )
     );
 
     }

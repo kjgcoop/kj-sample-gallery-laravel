@@ -8,7 +8,7 @@
 
 <ul id="imgs">
 @foreach ($imgs as $img)
-    @if ($img->is_image()) {
+    @if ($img->is_image())
         <li><img data-file="{{ $img->filename }}" src="kj_images/th/{{ $img->filename }}"></li>
     @elseif ($img->is_video())
         <li>

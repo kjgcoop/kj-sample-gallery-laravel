@@ -10,6 +10,11 @@ ul#imgs li {
     padding: 0.5em;
 }
 
+#imgs img.still,
+#imgs img.video {
+    padding-bottom: 1rem;
+}
+
 #full {
     padding: 0.5em;
     display: block;

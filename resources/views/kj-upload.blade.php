@@ -6,6 +6,8 @@
 @section('gallery')
 <h1>@yield('title')</h1>
 
+<p>Upload an image</p>
+
 <ul id="imgs">
 @foreach ($imgs as $img)
     @if ($img->is_image() && $img->enabled)

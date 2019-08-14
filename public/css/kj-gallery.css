@@ -1,6 +1,5 @@
 ul#imgs {
     list-style-type: none;
-    text-align: center;
     padding-left: 0;
     display: block;
 }
@@ -24,4 +23,13 @@ ul#imgs li {
 #full img {
     width: 100%;
     height: auto;
+}
+
+.fa-video {
+    position: relative;
+    left: -40px;
+    top: 30px;
+    z-index: 1000;
+    background-color: white;
+    padding: 0.3rem;
 }

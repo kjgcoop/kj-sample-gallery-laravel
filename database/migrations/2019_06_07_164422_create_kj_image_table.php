@@ -23,42 +23,8 @@ class CreateKjImageTable extends Migration
 
             $table->boolean('enabled')->default(true);
 
-<<<<<<< HEAD
-    // https://stackoverflow.com/questions/12736120/populating-a-database-in-a-laravel-migration-file
-    DB::table($tbl)->insert(
-        array(
-            'id'       => '1',
-            'filename' => '1.jpg'
-        ),
-        array(
-            'id'       => '2',
-            'filename' => '2.jpg'
-        ),
-        array(
-            'id'       => '3',
-            'filename' => '3.jpg'
-        ),
-        array(
-            'id'       => '4',
-            'filename' => '4.jpg'
-        ),
-        array(
-            'id'       => '5',
-            'filename' => '5.jpg'
-        ),
-        array(
-            'id'       => '6',
-            'filename' => '6.jpg'
-        ),
-        array(
-            'id'       => '7',
-            'filename' => '7.jpg'
-        )
-    );
-=======
             $table->timestamps();
         });
->>>>>>> 2019_video_thumbnail_db
 
         // https://stackoverflow.com/questions/12736120/populating-a-database-in-a-laravel-migration-file
         DB::table($tbl)->insert(

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('#imgs img.still').click(function () {
         var filename = $(this).attr('data-file');
         var new_tgt  = 'kj_images/' + filename;
@@ -13,5 +12,4 @@ $(document).ready(function(){
 
         $('#full').html(new_tgt);
     });
-
 });

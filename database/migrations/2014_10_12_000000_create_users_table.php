@@ -27,9 +27,11 @@ class CreateUsersTable extends Migration
             array(
                 'name'     => 'KJ',
                 'email'    => 'kj@kjcoop.com',
-                'password' => 'password'
+                // The password is password
+                'password' => '$2y$10$qBndjeBFXyR9f5kjXVibTOqLXP1lr6dr.iVRSG85KbFxpv47uDxi.'
             )
         );
+
     }
 
     /**

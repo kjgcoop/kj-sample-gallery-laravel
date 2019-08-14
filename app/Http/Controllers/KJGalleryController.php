@@ -12,7 +12,7 @@ class KJGalleryController extends Controller
         // pop wants an array, $imgs is an object; Hard-code for now.
 //        $default = array_pop($imgs);
 
-        return view('home', array(
+        return view('kj-gallery', array(
             'imgs'    => $imgs,
             'default' => '1.jpg'
         ));

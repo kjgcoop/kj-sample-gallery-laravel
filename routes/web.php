@@ -11,4 +11,12 @@
 |
 */
 
-Route::get('/', 'KJGalleryController@index');
+
+Auth::routes();
+
+Route::get('/kj-gallery', ['middleware' => 'auth', 'uses' => 'KJGalleryController@index']);
+//Route::get('/kj-gallery', 'KJGalleryController@index');
+//Route::get('/', 'KJGalleryController@index');
+
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');

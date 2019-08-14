@@ -14,5 +14,9 @@ ul#imgs li {
     padding: 0.5em;
     display: block;
     text-align: center;
+}
 
+#full img {
+    width: 100%;
+    height: auto;
 }

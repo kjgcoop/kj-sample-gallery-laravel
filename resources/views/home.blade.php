@@ -1,20 +1,23 @@
-@extends('master')
-
-@section('title', "KJ's Sample Gallery")
+@extends('layouts.app')
 
 @section('content')
-<h1>@yield('title')</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-<p>Following a <a href="https://www.youtube.com/watch?v=ubfxi21M1vQ">YouTube video</a><p>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-<ul id="imgs">
-@foreach ($imgs as $img)
-    <li><img data-file="{{ $img->filename }}" src="kj_images/th/{{ $img->filename }}"></li>
-@endforeach
-</ul>
-
-<div id="full">
-    <img src="kj_images/lg/{{ $default }}">
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 @endsection

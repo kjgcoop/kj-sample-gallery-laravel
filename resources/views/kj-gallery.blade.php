@@ -9,11 +9,7 @@
 <ul id="imgs">
 @foreach ($imgs as $img)
     @if ($img->is_image())
-<<<<<<< HEAD
-        <li><img data-file="{{ $img->filename }}" src="kj_images/th/{{ $img->filename }}"></li>
-=======
         <li><img data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}" class="still"></li>
->>>>>>> 2019_video_thumbnail_db
     @elseif ($img->is_video())
         <li><img data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}" class="video"></li>
     @endif

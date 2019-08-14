@@ -8,12 +8,12 @@
 
 <ul id="imgs">
 @foreach ($imgs as $img)
-    @if ($img->is_image()) {
-        <li><img data-file="{{ $img->filename }}" src="kj_images/th/{{ $img->filename }}"></li>
+    @if ($img->is_image())
+        <li><img data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}"></li>
     @elseif ($img->is_video())
         <li>
-            <video width="200" height="200" controls>
-                <source data-file="{{ $img->filename }}" src="kj_images/{{ $img->filename }}" type="video/mp4">
+            <video controls>
+                <source data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}" type="video/mp4">
                 Your browser doesn't support the video tag.
             </video>
         </li>

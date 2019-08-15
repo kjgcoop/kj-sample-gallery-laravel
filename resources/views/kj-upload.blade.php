@@ -1,9 +1,8 @@
 @extends('master')
-@extends('layouts.app');
 
 @section('title', "KJ's Sample Gallery")
 
-@section('gallery')
+@section('upload')
 <h1>@yield('title')</h1>
 
 <p>Upload an image</p>

@@ -15,6 +15,7 @@
 Auth::routes();
 
 Route::get('/kj-gallery', ['middleware' => 'auth', 'uses' => 'KJGalleryController@index']);
+Route::get('/kj-upload', ['middleware' => 'auth', 'uses' => 'KJGalleryController@upload']);
 //Route::get('/kj-gallery', 'KJGalleryController@index');
 //Route::get('/', 'KJGalleryController@index');
 

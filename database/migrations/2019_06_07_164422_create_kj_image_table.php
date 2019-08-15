@@ -38,19 +38,16 @@ class CreateKjImageTable extends Migration
                 'id'        => '2',
                 'thumbnail' => '2.jpg',
                 'filename'  => '2.jpg',
-//                'enabled'   => '0',
             ),
             array(
                 'id'        => '3',
                 'thumbnail' => '3.jpg',
                 'filename'  => '3.jpg',
-//                'enabled'   => '1',
             ),
             array(
                 'id'        => '4',
                 'thumbnail' => '4.jpg',
                 'filename'  => '4.jpg',
-//                'enabled'   => '1',
             ),
             array(
                 'id'        => '5',

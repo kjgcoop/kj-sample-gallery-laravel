@@ -20,7 +20,8 @@ ul#imgs li {
     text-align: center;
 }
 
-#full img {
+#full img,
+#full video {
     width: 100%;
     height: auto;
 }

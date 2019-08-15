@@ -1,9 +1,8 @@
 @extends('master')
-@extends('layouts.app');
 
 @section('title', "KJ's Sample Gallery")
 
-@section('gallery')
+@section('content')
 <h1>@yield('title')</h1>
 
 <ul id="imgs">
@@ -18,7 +17,7 @@
 </ul>
 
 <div id="full">
-    <img src="kj_images/lg/{{ $default }}">
+    <img src="kj_images/{{ $default }}">
 </div>
 
 @endsection

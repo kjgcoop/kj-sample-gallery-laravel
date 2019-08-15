@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>@yield('title')</title>
+    <title>KJ's Sample Laravel Gallery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/2c245143cb.js"></script>
     <script src="/js/kj-gallery.js"></script>
@@ -9,8 +9,9 @@
 </head>
 
 <body>
+    @include('layouts.nav')
     <div class="container">
-        @yield('gallery');
+        @yield('content')
     </div>
 </body>
 </html>

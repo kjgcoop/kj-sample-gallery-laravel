@@ -11,6 +11,7 @@
 <body>
     @include('layouts.nav')
     <div class="container">
+        <h1>KJ's Sample Laravel Gallery</h1>
         @yield('content')
     </div>
 </body>

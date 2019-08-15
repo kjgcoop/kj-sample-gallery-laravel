@@ -17,9 +17,4 @@ class KJGalleryController extends Controller
             'default' => '1.jpg'
         ));
     }
-
-    public function upload() {
-        return view('kj-upload');
-
-    }
 }

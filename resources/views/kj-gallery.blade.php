@@ -1,9 +1,6 @@
 @extends('master')
 
-@section('title', "KJ's Sample Gallery")
-
 @section('content')
-<h1>@yield('title')</h1>
 
 <ul id="imgs">
 @foreach ($imgs as $img)

@@ -8,7 +8,14 @@
         <li data-file="{{ $img->filename }}" style="background-image: url({{ $img->get_thumbnail() }});" class="still">
         @if ($img->has_exif())
             <div class="exif">
-                {{ $img->get_exif() }}
+                @foreach ($img->get_exif() as $key => $value)
+                    @if (!is_array($value))
+                        <div class="exif_line">
+                            <div class="exif_key">{{ $key }}</div>
+                            <div class="exif_value">{{ $value }}&nbsp;</div>
+                        </div>
+                    @endif
+                @endforeach
             </div>
         @else
             &nbsp;

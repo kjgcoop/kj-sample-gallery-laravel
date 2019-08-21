@@ -30,7 +30,8 @@ class KJGalleryImage extends Model
 
     public function get_exif() {
         $this->prepare();
-        return print_r($this->exif, true);
+        return $this->exif;
+//        return print_r($this->exif, true);
     }
 
     public function get_full_image() {

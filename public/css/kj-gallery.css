@@ -57,5 +57,24 @@ ul#imgs li {
 
 #exif_block .exif {
     display: block;
-    white-space: pre;
 }
+
+.exif_line {
+    display: block;
+    width: 100%;
+}
+
+.exif_key {
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 20%;
+}
+
+.exif_value {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+

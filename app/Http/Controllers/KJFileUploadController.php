@@ -29,7 +29,15 @@ class KJFileUploadController extends Controller
         // the directory structure tells us which is which.
         // @todo Video thumbnails of some kind
         $image->filename  = $name;
-        $image->thumbnail = $name;
+
+
+//        if ($image->is_video()) {
+        if (mime_content_type($this->gallery_dir.'/'.$name) == 'video/mp4') {
+            $image->thumbnail = $this->thumbnail_dir.'/video.png';
+        } else {
+            $image->thumbnail = $name;
+        }
+
         $image->save();
 
     }
@@ -37,8 +45,7 @@ class KJFileUploadController extends Controller
     public function process(Request $request) {
         $request->validate([
             // https://www.webslesson.info/2018/02/image-file-upload-in-laravel-with-validation.html
-            'fileToUpload' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
-//            'fileToUpload' => 'required|file|max:1024',
+            'fileToUpload' => 'required|mimes:jpg,jpeg,png,gif,mp4|max:20480',
         ]);
 
         $request->fileToUpload->store('uploads');

@@ -5,10 +5,9 @@
 <ul id="imgs">
 @foreach ($imgs as $img)
     @if ($img->is_image() && $img->enabled)
-        <li><img data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}" class="still"></li>
+        <li data-file="{{ $img->filename }}" style="background-image: url({{ $img->get_thumbnail() }});" class="still">&nbsp;</li>
     @elseif ($img->is_video() && $img->enabled)
-        <li><img data-file="{{ $img->filename }}" src="{{ $img->get_thumbnail() }}" class="video"></li>
-        <i class="fas fa-video"></i>
+        <li data-file="{{ $img->filename }}" style="background-image: url({{ $img->get_thumbnail() }});" class="video"><i class="fas fa-video"></i></li>
     @endif
 @endforeach
 </ul>

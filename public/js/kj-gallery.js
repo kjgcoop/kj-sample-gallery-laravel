@@ -4,6 +4,8 @@ $(document).ready(function(){
         var new_tgt  = 'kj_images/' + filename;
 //        $('#full img').attr('src', new_tgt);
         $('#full').html('<img src="' + new_tgt + '">');
+        $('#exif_block').html($(this).html());
+        console.debug($(this).html());
     });
 
     $('#imgs li.video').click(function () {

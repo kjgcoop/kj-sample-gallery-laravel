@@ -15,6 +15,10 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/kj-gallery">KJ's Gallery</a>
+                        </li>
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -26,9 +30,6 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="/kj-gallery">KJ's Gallery</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/kj-upload-form">Upload an image</a>
                             </li>

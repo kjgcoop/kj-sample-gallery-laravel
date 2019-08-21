@@ -15,7 +15,7 @@
 Auth::routes();
 
 // Show pictures
-Route::get('/kj-gallery', ['middleware' => 'auth', 'uses' => 'KJGalleryController@index']);
+Route::get('/kj-gallery','KJGalleryController@index');
 
 // Upload new pictures
 Route::get('/kj-upload-form', ['middleware' => 'auth', 'uses' => 'KJFileUploadController@form']);

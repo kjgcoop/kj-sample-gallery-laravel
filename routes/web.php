@@ -15,12 +15,10 @@
 Auth::routes();
 
 // Show pictures
-Route::get('/kj-gallery', ['middleware' => 'auth', 'uses' => 'KJGalleryController@index']);
+Route::get('/',           'KJGalleryController@index');
+Route::get('/kj-gallery', 'KJGalleryController@index');
+Route::get('/home',       'KJGalleryController@index');
 
 // Upload new pictures
-Route::get('/kj-upload-form', ['middleware' => 'auth', 'uses' => 'KJFileUploadController@form']);
+Route::get('/kj-upload-form',     ['middleware' => 'auth', 'uses' => 'KJFileUploadController@form']);
 Route::post('/kj-upload-process', ['middleware' => 'auth', 'uses' => 'KJFileUploadController@process']);
-
-// Laravel auth pages
-Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index')->name('home'); // @todo should this be behid a login form?

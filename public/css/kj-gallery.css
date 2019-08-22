@@ -44,3 +44,45 @@ ul#imgs li {
     background-color: white;
     padding: 0.3rem;
 }
+
+.head {
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 1px solid;
+    display: block;
+    float: none;
+    margin-bottom: 1rem;
+}
+
+.exif {
+    display: none;
+}
+
+#exif_block {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#exif_block .exif {
+    display: block;
+}
+
+.exif_line {
+    display: block;
+    width: 100%;
+}
+
+.exif_key {
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 20%;
+}
+
+.exif_value {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+

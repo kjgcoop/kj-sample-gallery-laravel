@@ -45,6 +45,15 @@ ul#imgs li {
     padding: 0.3rem;
 }
 
+.head {
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 1px solid;
+    display: block;
+    float: none;
+    margin-bottom: 1rem;
+}
+
 .exif {
     display: none;
 }

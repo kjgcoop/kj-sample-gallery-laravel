@@ -1,9 +1,9 @@
 <html>
 <head>
-    <title>{{ config('app.name', 'KJ\'s Sample Laravel Gallery') }}</title>
+    <title>KJ's Sample Laravel Gallery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/2c245143cb.js"></script>
-<!--    <script src="/js/kj-gallery.js"></script>-->
+    <script src="/js/kj-gallery.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/kj-gallery.css">
     <link href="http://localhost:8000/css/app.css" rel="stylesheet">
 </head>
@@ -11,6 +11,7 @@
 <body>
     @include('layouts.nav')
     <div class="container">
+        <h1>KJ's Sample Laravel Gallery</h1>
         @yield('content')
     </div>
 </body>

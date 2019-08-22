@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('#imgs li.still').click(function () {
         var filename = $(this).attr('data-file');
         var new_tgt  = 'kj_images/' + filename;
+//        $('#full img').attr('src', new_tgt);
         $('#full').html('<img src="' + new_tgt + '">');
     });
 

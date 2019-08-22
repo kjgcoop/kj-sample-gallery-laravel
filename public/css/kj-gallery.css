@@ -8,6 +8,7 @@ ul#imgs {
     list-style-type: none;
     padding-left: 0;
     display: block;
+    height: 100px;
 }
 
 ul#imgs li {

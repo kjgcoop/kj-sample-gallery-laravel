@@ -1,7 +1,35 @@
+body {
+    background-color: #e3f4f8;
+}
+
+nav .container {
+    background-color: transparent;
+    border: none;
+    height: 110px;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    padding-top: 2rem;
+    width: 60%;
+}
+
+.navbar {
+    background: url(/dark_rainbow_top.png);
+    margin-bottom: 3rem;
+}
+
+.navbar .container,
+.navbar-light .navbar-nav .nav-link,
+.navbar .container a {
+    color: white;
+    font-weight: bold;
+}
+
 h1 {
     padding-top: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid grey;
 }
 
 ul#imgs {
@@ -51,7 +79,7 @@ ul#imgs li {
     font-size: larger;
     border-bottom: 1px solid;
     display: block;
-    float: none;
+    clear: both;
     margin-bottom: 1rem;
 }
 
@@ -86,4 +114,20 @@ ul#imgs li {
     width: 80%;
 }
 
+.selected {
+    border: 2px solid black;
+}
 
+/* This is for app.layout - should probably go in its own stylesheet */
+.col-md-8, .row {
+    padding-bottom: 2rem;
+}
+
+.dropdown-menu.dropdown-menu-right.show a {
+    color: black;
+}
+
+#navbarDropdown a:hover,
+#navbarDropdown a:active {
+    color: white;
+}

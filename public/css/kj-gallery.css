@@ -115,8 +115,15 @@ ul#imgs li {
 }
 
 /* This is for app.layout - should probably go in its own stylesheet */
-.col-md-8 {
+.col-md-8, .row {
     padding-bottom: 2rem;
 }
 
+.dropdown-menu.dropdown-menu-right.show a {
+    color: black;
+}
 
+#navbarDropdown a:hover,
+#navbarDropdown a:active {
+    color: white;
+}

@@ -1,11 +1,35 @@
+body {
+    background-color: #e3f4f8;
+}
+
+nav .container {
+    background-color: transparent;
+    border: none;
+    height: 110px;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    padding-top: 2rem;
+    width: 60%;
+}
+
 .navbar {
-    margin-bottom: 1rem;
+    background: url(/dark_rainbow_top.png);
+    margin-bottom: 3rem;
+}
+
+.navbar .container,
+.navbar-light .navbar-nav .nav-link,
+.navbar .container a {
+    color: white;
+    font-weight: bold;
 }
 
 h1 {
     padding-top: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid grey;
 }
 
 ul#imgs {
@@ -88,6 +112,11 @@ ul#imgs li {
     display: block;
     float: left;
     width: 80%;
+}
+
+/* This is for app.layout - should probably go in its own stylesheet */
+.col-md-8 {
+    padding-bottom: 2rem;
 }
 
 

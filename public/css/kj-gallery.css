@@ -114,6 +114,10 @@ ul#imgs li {
     width: 80%;
 }
 
+.selected {
+    border: 2px solid black;
+}
+
 /* This is for app.layout - should probably go in its own stylesheet */
 .col-md-8, .row {
     padding-bottom: 2rem;

@@ -24,7 +24,6 @@ $(document).ready(function(){
 
         // Add new highlighting
         $(this).toggleClass('selected');
-        console.debug('Toggling');
     });
 
     // Display the first image
